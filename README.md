@@ -14,7 +14,7 @@ Note that all commits should go against the GitHub repository; the GitBook toolc
 is configured to watch for master-branch commits and automatically update and publish
 the documentation.
 
-For questions and comments, please contact:
+For inquiries and comments, please contact:
 
 Mike Simpson  
 Associate Director, Technology Strategy & Services  

@@ -2,7 +2,7 @@
 
 ## Overview
 
-(tbd)
+![LCU Power Distribution Design](images/lcu_power_distribution_design.png)
 
 ## Outstanding Issues
 
