@@ -4,7 +4,7 @@
 
 ![LCU Power Distribution Design](images/lcu_power_distribution_design.png)
 
-## Outstanding Issues
+## Issues
 
 *   The email settings on PDU-1B-A and PDU-1B-B look a little strange; when
     you try to display them, you get this error text:
