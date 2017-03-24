@@ -6,7 +6,6 @@ six appliances (the minimum cluster size that supports 10/8 [erasure coding][ec]
 with a planned expansion over the next several years to twelve nodes in the
 cluster.
 
-# Links
 
 [qumulo]: http://qumulo.com/ "Qumulo Scale-Out NAS"
 [ec]: http://www.networkcomputing.com/storage/raid-vs-erasure-coding/1792588127 "RAID vs. Erasure Coding"

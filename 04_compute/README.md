@@ -5,6 +5,5 @@ by [SimpliVity HCI appliances][simplivity]; initial configuration was for a pair
 appliances (the minimum cluster size for full redundancy), with a planned expansion 
 over the next several years to eight nodes in the cluster.
 
-# Links
 
 [simplivity]: https://www.simplivity.com/ "SimpliVity Home Page"
