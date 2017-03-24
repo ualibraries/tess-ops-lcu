@@ -13,11 +13,11 @@
     serial port to the UPS's serial management ports, using appropriate 
     terminal software (e.g., Putty), with the following settings:
     
-        Bits Per Second:  **9600**
-        Data Bits:        **8**
-        Parity:           **None**
-        Stop Bits:        **1**
-        Flow Control:     **None**
+        Bits Per Second:  9600
+        Data Bits:        8
+        Parity:           None
+        Stop Bits:        1
+        Flow Control:     None
 
 *   Connected ethernet cables from the UPS network management ports
     to the out-of-band management switch.
@@ -41,56 +41,56 @@ IP address, device name, etc.).
 
 *   Answered prompts as follows:
 
-        Reset configuration and root password to default values? **N**
-        Obtain IPv4 settings automatically using DHCP for Ethernet interface? **N**
-        IP Address? **10.130.143.138**
-        Subnet mask? **255.255.255.128**
-        Gateway Address? **10.130.143.129**
-        Enable DHCPv6 for the Ethernet interface? **N**
-        Enable static IPv6 for the Ethernet interface? **N**
-        DNS Server? **150.135.238.4**
-        This card’s host name? **UPS-1A**
-        This card’s domain? **library.arizona.edu**
-        Enable SNTP? **Y**
-        Enable FTP? **N**
-        Port number? **21**
-        Enable HTTP? **N**
-        Port number? **80**
-        Enable HTTPS? **N**
-        Port number? **443**
-        Enable Telnet Menu? **N**
-        Port number? **23**
-        Enable Telnet Programs? **N**
-        Port number? **5214**
-        Enable SSH Menu? **Y**
-        Port number? **22**
-        Enable SSH Programs? **N**
-        Port Number? **2112**
-        Enable SNMP? **Y**
-        Port number? **161**
-        Enable SNMPv1? **Y**
-        Enable SNMPv2c? **Y**
-        Enable SNMPv3? **Y**
-        Do you wish to modify the network watchdog configuration? **N**
-        Would you like to update the RTC date/time in GMT? **N**
-        Time Zone in 30 minute intervals, +/-HH:MM: **-07:00**
-        Do you wish to configure the advanced settings? **N**
-        Would you like to update the Root Password? **Y**
+        Reset configuration and root password to default values? N
+        Obtain IPv4 settings automatically using DHCP for Ethernet interface? N
+        IP Address? 10.130.143.138
+        Subnet mask? 255.255.255.128
+        Gateway Address? 10.130.143.129
+        Enable DHCPv6 for the Ethernet interface? N
+        Enable static IPv6 for the Ethernet interface? N
+        DNS Server? 150.135.238.4
+        This card’s host name? UPS-1A
+        This card’s domain? library.arizona.edu
+        Enable SNTP? Y
+        Enable FTP? N
+        Port number? 21
+        Enable HTTP? N
+        Port number? 80
+        Enable HTTPS? N
+        Port number? 443
+        Enable Telnet Menu? N
+        Port number? 23
+        Enable Telnet Programs? N
+        Port number? 5214
+        Enable SSH Menu? Y
+        Port number? 22
+        Enable SSH Programs? N
+        Port Number? 2112
+        Enable SNMP? Y
+        Port number? 161
+        Enable SNMPv1? Y
+        Enable SNMPv2c? Y
+        Enable SNMPv3? Y
+        Do you wish to modify the network watchdog configuration? N
+        Would you like to update the RTC date/time in GMT? N
+        Time Zone in 30 minute intervals, +/-HH:MM: -07:00
+        Do you wish to configure the advanced settings? N
+        Would you like to update the Root Password? Y
         
-            *(set and confirmed the new root password)*
+            (set and confirmed the new root password)
         
-        Do you wish to modify the users? **N**
-        Do you wish to modify the auth and accounting method? **N**
-        Do you wish to modify the radius hosts table? **N**
-        Erase the server private key passphrase? **Y**
+        Do you wish to modify the users? N
+        Do you wish to modify the auth and accounting method? N
+        Do you wish to modify the radius hosts table? N
+        Erase the server private key passphrase? Y
         
-            *(set and confirmed the server private key passphrase)*
+            (set and confirmed the server private key passphrase)
             
-        Erase the client private key passphrase? **Y**
+        Erase the client private key passphrase? Y
         
-            *(set and confirmed the client private key passphrase)*
+            (set and confirmed the client private key passphrase)
             
-        How long (in seconds) should CPU delay before starting up? **5**
+        How long (in seconds) should CPU delay before starting up? 5
 
 *   Disconnected from the serial port.
 
@@ -100,21 +100,21 @@ IP address, device name, etc.).
     management subnet to the newly-set IP using the default username and
     password:
     
-        Username: **localadmin**
-        Password: **localadmin**
+        Username: localadmin
+        Password: localadmin
         
 *   Navigated the menu prompts to set the following information:
 
     *   Devices -> Identification ->
 
-            Device Name:  **UPS-1A**
-            Location:     **LCU**
-            Region:       **UA LIBRARIES**
+            Device Name:  UPS-1A
+            Location:     LCU
+            Region:       UA LIBRARIES
         
     *   System Configuration -> Address Book -> Email Contacts
     
-            Name:   **Library Ops LCU Distribution List**
-            Email:  **LBRY-OPS-LCU@distribution.arizona.edu**
+            Name:   Library Ops LCU Distribution List
+            Email:  LBRY-OPS-LCU@distribution.arizona.edu
             
     *   System Configuration -> Security -> Local Users
     
@@ -122,16 +122,16 @@ IP address, device name, etc.).
 
     *   System Configuration -> Date/Time -> Time Settings
     
-            Timezone Offset:              **-07:00**
-            Using Daylight Savings Time:  **No**
+            Timezone Offset:              -07:00
+            Using Daylight Savings Time:  No
             
     *   System Configuration -> Date/Time -> NTP Settings
 
-            Update Interval:    **360**
-            Primary Address:    **0.pool.ntp.arizona.edu**
-            Primary Port:       **123**
-            Secondary Address:  **1.pool.ntp.arizona.edu**
-            Secondary Port:     **123**
+            Update Interval:    360
+            Primary Address:    0.pool.ntp.arizona.edu
+            Primary Port:       123
+            Secondary Address:  1.pool.ntp.arizona.edu
+            Secondary Port:     123
     
     *   System Configuration -> Date/Time -> Time Source -> Switch To NTP
 
