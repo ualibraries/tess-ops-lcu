@@ -30,51 +30,72 @@ federation, and storage).
 *   Finally, note that because of the way we route upstream, the Qumulo NAS VLAN itself winds
     up with two separate IP addresses (one each on the "A" and "B" top-of-rack switches).
 
-| IP Address     | Hostname      | Purpose                                                                                            |
-| -------------- | ------------- | -------------------------------------------------------------------------------------------------- |
-| 10.131.90.1    | -             | (default gateway)                                                                                  |
+| IP Address     | Hostname      | Purpose                                                                                             |
+| -------------- | ------------- | --------------------------------------------------------------------------------------------------- |
+| 10.131.90.1    | -             | (default gateway)                                                                                   |
 ||||
-| (rr)           | qnas1-adm     | Qumulo Cluster 1, Administration Address (round-robin "A" records for 10.130.90.11 - 10.130.90.16) |
-| 10.130.90.11   | qnas1-1       | Qumulo Cluster 1, Node 1, Permanent Address                                                        |
-| 10.130.90.12   | qnas1-2       | Qumulo Cluster 1, Node 2, Permanent Address                                                        |
-| 10.130.90.13   | qnas1-3       | Qumulo Cluster 1, Node 3, Permanent Address                                                        |
-| 10.130.90.14   | qnas1-4       | Qumulo Cluster 1, Node 4, Permanent Address                                                        |
-| 10.130.90.15   | qnas1-5       | Qumulo Cluster 1, Node 5, Permanent Address                                                        |
-| 10.130.90.16   | qnas1-6       | Qumulo Cluster 1, Node 6, Permanent Address                                                        |
-| 10.130.90.17   | -             | (reserved)                                                                                         |
-| 10.130.90.18   | -             | (reserved)                                                                                         |
-| 10.130.90.19   | -             | (reserved)                                                                                         |
-| 10.130.90.20   | -             | (reserved)                                                                                         |
-| 10.130.90.21   | -             | (reserved)                                                                                         |
-| 10.130.90.22   | -             | (reserved)                                                                                         |
-| 10.130.90.23   | -             | (reserved)                                                                                         |
-| 10.130.90.24   | -             | (reserved)                                                                                         |
-| 10.130.90.25   | -             | (reserved)                                                                                         |
-| 10.130.90.26   | -             | (reserved)                                                                                         |
+| (rr)           | qnas1-adm     | Qumulo Cluster 1, Administration Hostname (round-robin "A" records for 10.130.90.11 - 10.130.90.16) |
+| 10.130.90.11   | qnas1-1       | Qumulo Cluster 1, Node 1, Permanent Address                                                         |
+| 10.130.90.12   | qnas1-2       | Qumulo Cluster 1, Node 2, Permanent Address                                                         |
+| 10.130.90.13   | qnas1-3       | Qumulo Cluster 1, Node 3, Permanent Address                                                         |
+| 10.130.90.14   | qnas1-4       | Qumulo Cluster 1, Node 4, Permanent Address                                                         |
+| 10.130.90.15   | qnas1-5       | Qumulo Cluster 1, Node 5, Permanent Address                                                         |
+| 10.130.90.16   | qnas1-6       | Qumulo Cluster 1, Node 6, Permanent Address                                                         |
 ||||
-| (rr)           | qnas1        | Qumulo Cluster 1, Access Address (round-robin "A" records for 10.130.90.31 - 10.130.90.60)         |
-| 10.130.90.31   | -            | Qumulo Cluster 1, Floating Address 1                                                                |
-| to             | -            |                                                                                                     |
-| 10.130.90.60   | -            | Qumulo Cluster 1, Floating Address 30                                                               |
-| 10.130.90.61   | -            | (reserved)                                                                                          |
-| to             | -            |                                                                                                     |
-| 10.130.90.111  | -            | (reserved)                                                                                          |
+| (rr)           | qnas1         | Qumulo Cluster 1, Access Hostname (round-robin "A" records for 10.130.90.31 - 10.130.90.60)         |
+| 10.130.90.31   | -             | Qumulo Cluster 1, Floating Address 1                                                                |
+| to             | -             |                                                                                                     |
+| 10.130.90.60   | -             | Qumulo Cluster 1, Floating Address 30                                                               |
 ||||
-| 10.130.90.112  | -            | (unused)                                                                                            |
-| to             | -            |                                                                                                     |
-| 10.130.90.252  | -            | (unused)                                                                                            |
-||||
-| 10.131.91.253  | -            | VLAN interface IP Address, S4048-1B                                                                 |
-| 10.131.91.254  | -            | VLAN interface IP Address, S4048-1A                                                                 |
-| 10.131.91.255  | -            | (broadcast address)                                                                                 |
+| 10.131.91.253  | -            | VLAN interface IP Address, S4048-1B                                                                  |
+| 10.131.91.254  | -            | VLAN interface IP Address, S4048-1A                                                                  |
+| 10.131.91.255  | -            | (broadcast address)                                                                                  |
 
 ### SimpliVity Management Subnet
 
+| IP Address     | Hostname      | Purpose                                                                                             |
+| -------------- | ------------- | --------------------------------------------------------------------------------------------------- |
+| 10.130.146.129 | -             | (default gateway)                                                                                   |
+||||
+| 10.130.146.133 | smplv1-1-ovcm | SimpliVity Cluster 1, Node 1, OVC Management Address                                                |
+| 10.130.146.134 | smplv1-1-vkm  | SimpliVity Cluster 1, Node 1, VMkernel Management Address                                           |
+||||
+| 10.130.146.137 | smplv1-2-ovcm | SimpliVity Cluster 1, Node 2, OVC Management Address                                                |
+| 10.130.146.138 | smplv1-2-vkm  | SimpliVity Cluster 1, Node 2, VMkernel Management Address                                           |
+||||
+| 10.130.146.253 | -             | VLAN interface IP Address, S4048-1B                                                                 |
+| 10.130.146.254 | -             | VLAN interface IP Address, S4048-1A                                                                 |
+| 10.130.146.255 | -             | (broadcast address)                                                                                 |
+
 ### SimpliVity Federation Subnet
+
+| IP Address     | Hostname      | Purpose                                                                                             |
+| -------------- | ------------- | --------------------------------------------------------------------------------------------------- |
+| 10.130.147.1   | -             | (default gateway)                                                                                   |
+||||
+| 10.130.147.5   | smplv1-1-ovcf | SimpliVity Cluster 1, Node 1, OVC Federation Address                                                |
+||||
+| 10.130.147.9   | smplv1-2-ovcf | SimpliVity Cluster 1, Node 2, OVC Federation Address                                                |
+||||
+| 10.130.147.125 | -             | VLAN interface IP Address, S4048-1B                                                                 |
+| 10.130.147.126 | -             | VLAN interface IP Address, S4048-1A                                                                 |
+| 10.130.147.127 | -             | (broadcast address)                                                                                 |
 
 ### SimpliVity Storage Subnet
 
-
+| IP Address     | Hostname      | Purpose                                                                                             |
+| -------------- | ------------- | --------------------------------------------------------------------------------------------------- |
+| 10.130.147.129 | -             | (default gateway)                                                                                   |
+||||
+| 10.130.147.133 | smplv1-1-ovcs | SimpliVity Cluster 1, Node 1, OVC Storage Address                                                   |
+| 10.130.147.134 | smplv1-1-vks  | SimpliVity Cluster 1, Node 1, VMkernel Storage Address                                              |
+||||
+| 10.130.147.137 | smplv1-2-ovcs | SimpliVity Cluster 1, Node 2, OVC Storage Address                                                   |
+| 10.130.147.138 | smplv1-2-vks  | SimpliVity Cluster 1, Node 2, VMkernel Storage Address                                              |
+||||
+| 10.130.147.253 | -             | VLAN interface IP Address, S4048-1B                                                                 |
+| 10.130.147.254 | -             | VLAN interface IP Address, S4048-1A                                                                 |
+| 10.130.147.255 | -             | (broadcast address)                                                                                 |
 
 ## Issues
 
@@ -82,4 +103,4 @@ federation, and storage).
     of locking it down (maybe w/VPN?), and then implement it. (mgs, 3/27/2017)
 
 *   We'll eventually need to add a publically-routed subnet, so that services we
-    deploy can be seen off-campus.
+    deploy can be seen off-campus. (mgs, 3/27/2017)
